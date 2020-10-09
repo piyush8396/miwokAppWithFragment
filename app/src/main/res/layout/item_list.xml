@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:background="@color/tan_background"
+    android:minHeight="@dimen/list_min_height">
+
+    <ImageView
+        android:layout_width="@dimen/list_min_height"
+        android:layout_height="@dimen/list_min_height"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/image">
+    </ImageView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+       android:id="@+id/layout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/image"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mowik"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textStyle="bold"
+            tools:text="lutti">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/english"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textColor="@android:color/white"
+            tools:text="one">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:src="@drawable/play2"
+        android:paddingRight="16dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        >
+
+    </ImageView>
+
+</RelativeLayout>
